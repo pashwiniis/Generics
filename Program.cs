@@ -20,13 +20,13 @@ namespace Generics
             switch(choice)
             {
                 case 1:
-                    FindMaxValue.ShowMaxInt();
+                    FindMaxValue<int>.ShowMax();
                     break;
                 case 2:
-                    FindMaxValue.ShowMaxFloat();
+                    FindMaxValue<float>.ShowMax();
                     break;
                 case 3:
-                    FindMaxValue.ShowMaxString();
+                    FindMaxValue<string>.ShowMax();
                     break;
                 default:
                     Console.WriteLine("Invalid Choice !!!");
