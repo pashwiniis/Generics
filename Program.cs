@@ -13,10 +13,25 @@ namespace Generics
         {
             Console.WriteLine("************Welcome to GenericsConcept**************");
 
-                      
-            Console.WriteLine("The maximum Integer Value is " + FindMaxValue.FindMaxInteger(30, 46, 23));
-            Console.WriteLine("The maximum Float Value is " + FindMaxValue.FindMaxInteger(3.6f,6.7f,2.3f));
-            Console.WriteLine("The maximum string is " + FindMaxValue.FindMaxInteger("Apple", "peach", "Banana"));
+            Console.WriteLine("1)Maximum in Integer   2)Maximum in Float    3)Maximum in String");
+            Console.WriteLine("---------------------------------------------------");
+            Console.Write("Enter your choice : ");
+            int choice = int.Parse(Console.ReadLine());
+            switch(choice)
+            {
+                case 1:
+                    FindMaxValue.ShowMaxInt();
+                    break;
+                case 2:
+                    FindMaxValue.ShowMaxFloat();
+                    break;
+                case 3:
+                    FindMaxValue.ShowMaxString();
+                    break;
+                default:
+                    Console.WriteLine("Invalid Choice !!!");
+                    break;
+            }
 
         }
     }
